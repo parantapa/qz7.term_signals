@@ -49,6 +49,9 @@ def _handle_term_signal(signame, raise_exc, raise_once, signum, frame):
 def have_received_term_signal():
     """
     Return the list of term signals received.
+
+    Returns:
+        A list of (signame, signum) tuples.
     """
 
     return TERM_SIGNAL_RECEIVED
